@@ -126,15 +126,15 @@ All fonts are open-licensed (SIL OFL, Google Fonts). Install them, or use the fa
 
 ### Logo Usage
 
-Logo files: `assets/zhras-brand/final/` (repo root).
+Logo files (repo root): `assets/zhras-logo/png/` (high-resolution PNG) and `assets/zhras-logo/svg/` (vector). Names: `zhras-{emblem|logo-horizontal|logo-vertical}-{color|white|aqua}` — **color** = two-tone for light backgrounds, **white** = transparent white for Aqua / Deep Ocean backgrounds, **aqua** = with its own Aqua background.
 
 | Situation | File |
 |-----------|------|
-| Cover / closing on Aqua `#2A93AE` | `base-reverse/lockup-horizontal` or `lockup-vertical` (transparent, white) |
-| Dark (Deep Ocean) slides | `base-reverse/…` |
-| White / light slide, large placement | `two-tone/lockup-horizontal` or `lockup-vertical` |
-| Footer (every content slide) | `two-tone/emblem`, height 0.32in (≥ 24 px) |
-| Small marks, favicons, avatars | `two-tone/emblem` or `base-reverse/emblem` |
+| Cover / closing on Aqua `#2A93AE` | `zhras-logo-horizontal-white` or `zhras-logo-vertical-white` (transparent, white) |
+| Dark (Deep Ocean) slides | `zhras-*-white` |
+| White / light slide, large placement | `zhras-logo-horizontal-color` or `zhras-logo-vertical-color` |
+| Footer (every content slide) | `zhras-emblem-color`, height 0.32in (≥ 24 px) |
+| Small marks, favicons, avatars | `zhras-emblem-color` or `zhras-emblem-white` |
 
 - Minimum size (the tagline must stay ≥ 6pt, the vertical slogan ≥ 8pt):
   - **On a 13.33in slide (or any projected/printed page): horizontal lockup ≥ 4.0in wide, vertical lockup ≥ 3.5in wide.**
@@ -142,8 +142,8 @@ Logo files: `assets/zhras-brand/final/` (repo root).
   - Print: horizontal ≥ 100 mm, vertical ≥ 70 mm.
   - Emblem alone: ≥ 24 px on screen, ≥ 8 mm in print (0.32in footer emblem on a slide is fine).
   - Below these sizes use the emblem alone, not a shrunken lockup.
-- `base/…` logos carry their own Aqua rectangle: use them as a self-contained panel, never on another background.
-- Never recolor, restretch, rotate, outline, add shadows/glows, or place `two-tone` on a dark or busy background. Never retype the wordmark in a font.
+- `zhras-*-aqua` logos carry their own Aqua rectangle: use them as a self-contained panel, never on another background.
+- Never recolor, restretch, rotate, outline, add shadows/glows, or place a `color` logo on a dark or busy background. Never retype the wordmark in a font.
 
 ---
 
@@ -151,14 +151,14 @@ Logo files: `assets/zhras-brand/final/` (repo root).
 
 ### Cover Slide
 
-- Full-bleed Aqua `#2A93AE`. Logo: `base-reverse/lockup-horizontal`, top-left (x 0.7in, y 0.65in, width 4.5in; never below 4.0in).
+- Full-bleed Aqua `#2A93AE`. Logo: `zhras-logo-horizontal-white`, top-left (x 0.7in, y 0.65in, width 4.5in; never below 4.0in).
 - Title: 40pt white, left-aligned, y ≈ 3.2in, max width 8in. Subtitle 18pt white at 90% (large text only). Date/author in Share Tech Mono 12pt white.
 - Decoration: one oversized hexagon **outline** (the emblem's shape), white at 10% opacity, stroke 3pt, cropped by the right/bottom edge. No other graphics.
 
 ### Section Divider
 
 - Full-bleed Deep Ocean `#0B3F57`. Section number in Share Tech Mono 96pt Ice `#8FE3F0`; title 36pt white; one-line description 16pt white at 85%.
-- Emblem (`base-reverse/emblem`, 0.5in) bottom-left. No hexagon watermark.
+- Emblem (`zhras-emblem-white`, 0.5in) bottom-left. No hexagon watermark.
 
 ### Content Slide (Text + Visual)
 
@@ -178,7 +178,7 @@ Logo files: `assets/zhras-brand/final/` (repo root).
 
 ### Closing Slide
 
-- Full-bleed Aqua. `base-reverse/lockup-vertical` centered (width 4.4in; never below 3.5in), contact lines below in 14pt white (large-text rule applies: 14pt bold or 18pt regular), tagline already in the logo.
+- Full-bleed Aqua. `zhras-logo-vertical-white` centered (width 4.4in; never below 3.5in), contact lines below in 14pt white (large-text rule applies: 14pt bold or 18pt regular), tagline already in the logo.
 
 ---
 
@@ -241,7 +241,7 @@ When generating slides with this design system:
 You are creating a presentation using the ZHRAS slide design system (technical aqua, 16:9, 13.33x7.5in).
 Key rules:
 - Content slides: white background, one Aqua (#2A93AE) top bar 0.07in, titles Deep Ocean (#0B3F57) 28pt Inter/Noto Sans KR Bold; body #1E3A47 14pt.
-- Brand slides (cover/closing): full-bleed Aqua #2A93AE with the white reverse logo from assets/zhras-brand/final/base-reverse/; section dividers use Deep Ocean #0B3F57.
+- Brand slides (cover/closing): full-bleed Aqua #2A93AE with the white logo (assets/zhras-logo/png/zhras-*-white.png); section dividers use Deep Ocean #0B3F57.
 - Numbers, tags, labels and page numbers: Share Tech Mono (uppercase tags, tracking +12%). Michroma only for short Latin uppercase titles/the logo.
 - Aqua #2A93AE is for shapes only; small text uses Aqua Deep #136F8A on white or Ice #8FE3F0 on Deep Ocean. White text on Aqua only at >=18pt.
 - Status: green #17703F / amber #A85A00 / red #C62828 with tints #E6F4EC / #FFF4E6 / #FDECEC, always with a text label.
