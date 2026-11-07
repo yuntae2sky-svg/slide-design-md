@@ -15,6 +15,7 @@ A `DESIGN.md` is a plain-text specification of a presentation's visual identity:
 | [CA ADVANCE](./designs/ca-advance/DESIGN.md) | Minimal BtoB — white-base, professional | 16:9 |
 | [Tech Keynote](./designs/tech-keynote/DESIGN.md) | Dark, bold, Apple-inspired | 16:9 |
 | [Startup Pitch](./designs/startup-pitch/DESIGN.md) | Modern gradient, investor-facing | 16:9 |
+| [ZHRAS](./designs/zhras/DESIGN.md) | Technical aqua — RAS equipment maker, white content + Aqua/Deep Ocean brand slides | 16:9 |
 
 ## Structure
 

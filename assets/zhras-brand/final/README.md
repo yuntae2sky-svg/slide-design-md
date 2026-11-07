@@ -6,8 +6,9 @@
 |------|------|------|
 | `base/` | 기본형 — Aqua 배경 포함 (흰색 글자) | `emblem` · `lockup-horizontal` · `lockup-vertical` (SVG + PNG) |
 | `two-tone/` | 무배경 투톤 — 투명 배경, 밝은 배경용 | 위와 동일 |
+| `base-reverse/` | 기본형에서 Aqua 배경 사각형만 제거한 **투명 흰색 파생본** — Aqua/Deep Ocean 배경 슬라이드·영상 위에 직접 올리는 용도 | 위와 동일 |
 
-`preview.png`에서 4종을 한눈에 볼 수 있다. 세로형에는 슬로건(Sustainable Aquaculture Solution)이 들어 있고 가로형에는 없다.
+`preview.png`에서 기본형·투톤 4종을 한눈에 볼 수 있다. `base-reverse/`는 슬라이드 시스템(`designs/zhras/DESIGN.md`)을 위해 추가한 파생본으로, 새 디자인이 아니라 기본형과 동일하다. 세로형에는 슬로건(Sustainable Aquaculture Solution)이 들어 있고 가로형에는 없다.
 
 ## 사양
 
