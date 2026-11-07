@@ -1,16 +1,35 @@
-> ⚠ 이 폴더는 직전 버전이다. 중문 로고(예서체)와 영문 무배경 로고 방향이 `../confirm-v2/`로 대체되어 컨펌 대기 중이다.
+# ZHRAS 확정 로고
 
-# ZHRAS 확정 로고 (final)
+확정 범위: **영문 기본형**, **무배경 투톤**, 각각의 **가로형 / 세로형** (엠블럼 단독 포함). 중문 버전은 보류.
 
-| 파일 | 용도 |
-|------|------|
-| `zhras-base-emblem` | 기본형 엠블럼 (Aqua 배경) |
-| `zhras-base-lockup-horizontal` | 기본형 가로형 |
-| `zhras-base-lockup-vertical` | 기본형 세로형 (슬로건 포함) |
-| `zhras-zh-bilingual-horizontal` | **중문 로고 — 중·영 병기 가로형**: `中航环保` + `ZHRAS | SMART RAS EQUIPMENT EXPERT` |
+| 폴더 | 용도 | 파일 |
+|------|------|------|
+| `base/` | 기본형 — Aqua 배경 포함 (흰색 글자) | `emblem` · `lockup-horizontal` · `lockup-vertical` (SVG + PNG) |
+| `two-tone/` | 무배경 투톤 — 투명 배경, 밝은 배경용 | 위와 동일 |
 
-- 기본형: Aqua `#2A93AE` 배경, 평면 그라데이션 엠블럼, Michroma `ZHRAS`(H 원본), 태그라인 Share Tech Mono.
-- 중문 서체: 阿里妈妈刀隶体(예서체). 대안 临海隶书 버전은 `../zhras-base-v1/zh-linhai-lishu/`에 있다.
-- 무배경 컬러 3종은 `../zhras-base-v1/color-*/` 참고.
+`preview.png`에서 4종을 한눈에 볼 수 있다. 세로형에는 슬로건(Sustainable Aquaculture Solution)이 들어 있고 가로형에는 없다.
 
-⚠ 중문 예서체의 상업·상표 사용 라이선스는 확인되지 않았다. 확정 사용 전에 `../zhras-base-v1/README.md`의 라이선스 항목을 확인할 것.
+## 사양
+
+| 요소 | 기본형 | 무배경 투톤 |
+|------|--------|-------------|
+| 배경 | Aqua `#2A93AE` | 없음 |
+| 엠블럼 | 육각형 외곽선(흰색→`#CFF4FA`) + 물방울 평면 그라데이션(흰색→`#8FE3F0`) | 육각형 Deep Ocean `#0B3F57` + 물방울 시안 `#3FD0E6`→Aqua `#2A93AE`→Aqua Deep `#136F8A` |
+| `ZHRAS` | 흰색 | Deep Ocean `#0B3F57` |
+| 태그라인 | 흰색 | Aqua Deep `#136F8A` |
+| 슬로건(세로형) | 흰색 | `#4B6B79` |
+
+- 워드마크: Michroma(H 원본, 변형 없음). 태그라인 `SMART RAS EQUIPMENT EXPERT`: Share Tech Mono. 슬로건: Inter. 세 서체 모두 OFL(Google Fonts), 글자는 윤곽선으로 변환되어 폰트 설치 불필요.
+- 육각형 외곽선은 영상 원본 형태 유지.
+
+## 사용 주의
+
+- **대비:** 기본형의 흰 글자 대비는 3.57:1이라 큰 워드마크는 충분하지만 **작은 태그라인은 접근성 기준(AA 4.5:1)에 못 미친다.** 태그라인이 작게 쓰이는 곳(웹·작은 인쇄물)은 배경을 `#1B7F9B`(4.61:1)로 바꾸는 것을 권장. 투톤은 흰 배경에서 Deep Ocean 11.27:1, Aqua Deep 5.72:1로 충족.
+- **어두운 배경에는 투톤 대신 기본형**을 쓴다(투톤의 Deep Ocean 글자는 어두운 배경에서 보이지 않음).
+- 엠블럼은 약 24px 이상에서 판독 가능(그 이하는 비권장).
+- 영상에서 복원한 로고이며 공식 원본이 아니다. 인쇄·상표 등록 전에 KIPRIS 등에서 `ZHRAS` 상표 중복 여부를 확인할 것(이 작업에서는 미확인).
+
+## 보류·참고
+
+- 중문 `中航环保` 로고: 시안은 `../confirm-v2/`(ZCOOL QingKe HuangYou / Smiley Sans, 둘 다 OFL)에 있다. 확정되지 않았다.
+- 이전 예서체 중문 시안은 `../zhras-base-v1/`에 있으며 **서체 라이선스 미확인**이다.
