@@ -224,7 +224,16 @@ Logo files: `assets/zhras-brand/final/` (repo root).
 
 ---
 
-## 8. Agent Guide
+## 8. PowerPoint Template
+
+`ZHRAS-template.pptx` (same folder) implements this spec: 16:9 13.33 x 7.5in, theme colors/fonts set, four layouts (**ZHRAS Cover / Section / Content / Closing**) with named placeholders, and five example slides (cover, divider, content + native chart, KPI + table, closing) with speaker notes. Footer emblem, Aqua top bar and page numbers live on the layouts. Build script: `template-src/build.js`.
+
+- Install the fonts before opening it: **Michroma**, **Share Tech Mono**, **Inter** (and Noto Sans KR / Noto Sans SC for Korean / Chinese text) from Google Fonts. PowerPoint does not embed them; without them text falls back to a default font and widths change.
+- Sample numbers and text are placeholders — replace them.
+
+---
+
+## 9. Agent Guide
 
 When generating slides with this design system:
 
