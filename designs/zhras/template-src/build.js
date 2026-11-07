@@ -4,7 +4,7 @@ const pptxgen = require("pptxgenjs");
 // Set PPTX_SKILL_DIR to that skill directory, and run with NODE_PATH pointing at node_modules containing pptxgenjs.
 const SK = process.env.PPTX_SKILL_DIR;
 const { applyTheme } = require(SK + "/scripts/apply_theme.js");
-const LOGO = __dirname + "/../../../assets/zhras-brand/final";
+const LOGO = __dirname + "/../../../assets/zhras-logo/png";
 const HEXIMG = __dirname + "/hexagon-outline.png";
 const OUT = process.argv[2];
 
@@ -32,8 +32,8 @@ const W = 13.333;
 const MONO = "Share Tech Mono";
 const MUTED = "4B6B79", BORDER = "D5E2E7", TINT = "E8F4F8", FOAM = "F2FAFC";
 
-// logo aspect ratios (viewBox): horizontal 261.8x64, vertical 194.8x136.2, emblem 1:1
-const hH = (w) => (w * 64) / 261.8;
+// logo aspect ratios (viewBox): horizontal 260.06x68.32 (emblem raised 7.5% / shifted right 3%), vertical 194.8x136.2, emblem 1:1
+const hH = (w) => (w * 68.32) / 260.06;
 const vH = (w) => (w * 136.2) / 194.8;
 
 // ---------------------------------------------------------------- layouts
@@ -42,7 +42,7 @@ pres.defineSlideMaster({
   background: { color: C.accent1 },
   objects: [
     { image: { path: HEXIMG, x: 8.5, y: 3.5, w: 7.2, h: 7.2, transparency: 90, altText: "Decorative hexagon outline" } },
-    { image: { path: LOGO + "/base-reverse/lockup-horizontal.png", x: 0.7, y: 0.65, w: 4.5, h: hH(4.5), altText: "ZHRAS — Smart RAS Equipment Expert" } },
+    { image: { path: LOGO + "/zhras-logo-horizontal-white.png", x: 0.7, y: 0.65, w: 4.5, h: hH(4.5), altText: "ZHRAS — Smart RAS Equipment Expert" } },
     { placeholder: { options: { name: "title", type: "title", x: 0.7, y: 2.9, w: 8.4, h: 2.1, fontFace: "Michroma", fontSize: 40, color: C.background1, margin: 0, align: "left", valign: "top" }, text: "DECK TITLE" } },
     { placeholder: { options: { name: "subtitle", type: "body", x: 0.7, y: 5.2, w: 9.0, h: 0.7, fontSize: 18, color: C.background1, margin: 0, valign: "top" }, text: "Subtitle" } },
     { placeholder: { options: { name: "meta", type: "body", x: 0.7, y: 6.55, w: 6.0, h: 0.4, fontFace: MONO, fontSize: 12, color: C.background1, margin: 0, valign: "top" }, text: "YYYY.MM  |  Author" } },
@@ -56,7 +56,7 @@ pres.defineSlideMaster({
     { placeholder: { options: { name: "number", type: "body", x: 0.7, y: 1.7, w: 6.0, h: 1.7, fontFace: MONO, fontSize: 96, color: C.accent3, margin: 0, valign: "top" }, text: "01" } },
     { placeholder: { options: { name: "title", type: "title", x: 0.7, y: 3.55, w: 11.5, h: 1.0, fontSize: 36, bold: true, color: C.background1, margin: 0, align: "left", valign: "top" }, text: "Section title" } },
     { placeholder: { options: { name: "desc", type: "body", x: 0.7, y: 4.75, w: 10.5, h: 0.6, fontSize: 16, color: C.background1, margin: 0, valign: "top" }, text: "One-line description" } },
-    { image: { path: LOGO + "/base-reverse/emblem.png", x: 0.7, y: 6.5, w: 0.5, h: 0.5, altText: "ZHRAS emblem" } },
+    { image: { path: LOGO + "/zhras-emblem-white.png", x: 0.7, y: 6.5, w: 0.5, h: 0.5, altText: "ZHRAS emblem" } },
   ],
 });
 
@@ -67,7 +67,7 @@ pres.defineSlideMaster({
     { rect: { x: 0, y: 0, w: W, h: 0.07, fill: { color: C.accent1 }, line: { type: "none" } } },
     { placeholder: { options: { name: "label", type: "body", x: 0.7, y: 0.42, w: 8.0, h: 0.28, fontFace: MONO, fontSize: 11, color: C.accent2, margin: 0, valign: "top" }, text: "SECTION LABEL" } },
     { placeholder: { options: { name: "title", type: "title", x: 0.7, y: 0.74, w: 11.93, h: 0.9, fontSize: 28, bold: true, color: C.text2, margin: 0, align: "left", valign: "top" }, text: "Slide title states the finding" } },
-    { image: { path: LOGO + "/two-tone/emblem.png", x: 0.7, y: 6.95, w: 0.32, h: 0.32, altText: "ZHRAS emblem" } },
+    { image: { path: LOGO + "/zhras-emblem-color.png", x: 0.7, y: 6.95, w: 0.32, h: 0.32, altText: "ZHRAS emblem" } },
   ],
   slideNumber: { x: 11.63, y: 6.98, w: 1.0, h: 0.3, fontFace: MONO, fontSize: 10, color: MUTED, align: "right" },
 });
@@ -76,7 +76,7 @@ pres.defineSlideMaster({
   title: "ZHRAS Closing",
   background: { color: C.accent1 },
   objects: [
-    { image: { path: LOGO + "/base-reverse/lockup-vertical.png", x: (W - 4.4) / 2, y: 0.85, w: 4.4, h: vH(4.4), altText: "ZHRAS — Smart RAS Equipment Expert — Sustainable Aquaculture Solution" } },
+    { image: { path: LOGO + "/zhras-logo-vertical-white.png", x: (W - 4.4) / 2, y: 0.85, w: 4.4, h: vH(4.4), altText: "ZHRAS — Smart RAS Equipment Expert — Sustainable Aquaculture Solution" } },
     { placeholder: { options: { name: "contact", type: "body", x: 2.17, y: 5.55, w: 9.0, h: 1.1, fontSize: 18, bold: true, color: C.background1, margin: 0, align: "center", valign: "top" }, text: "contact@example.com" } },
   ],
 });
