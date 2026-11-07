@@ -32,8 +32,8 @@ const W = 13.333;
 const MONO = "Share Tech Mono";
 const MUTED = "4B6B79", BORDER = "D5E2E7", TINT = "E8F4F8", FOAM = "F2FAFC";
 
-// logo aspect ratios (viewBox): horizontal 261.8x64, vertical 194.8x136.2, emblem 1:1
-const hH = (w) => (w * 64) / 261.8;
+// logo aspect ratios (viewBox): horizontal 260.06x68.32 (emblem raised 7.5% / shifted right 3%), vertical 194.8x136.2, emblem 1:1
+const hH = (w) => (w * 68.32) / 260.06;
 const vH = (w) => (w * 136.2) / 194.8;
 
 // ---------------------------------------------------------------- layouts
